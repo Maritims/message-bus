@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./main.css">
+        <title>MessageBus</title>
+    </head>
+    <body>
+        <div class="container">
+            <form id="addSubscriberForm">
+                <input type="text" name="subscriberName" placeholder="Subscriber name">
+                <button type="submit">Add subscriber</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <form id="publishMessageForm">
+                <input type="text" name="recipients" placeholder="Comma separated string of subscribers, no whitespace">
+                <input type="text" name="message" placeholder="Message">
+                <button type="submit">Publish message</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <table id="subscriberTable">
+                <thead>
+                    <tr>
+                        <th class="name">Name</th>
+                        <th class="newestMessage">Newest message</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+       <script type="text/javascript" src="./main.js"></script>
+    </body>
+</html>

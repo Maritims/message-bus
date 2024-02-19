@@ -1,0 +1,26 @@
+.container {
+    border: 1px solid #CCC;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#subscriberTable {
+    width: 100%;
+
+    th {
+        &.name {
+            width: 25%;
+        }
+
+        &.newestMessage {
+            width: 75%;
+        }
+
+        text-align: left;
+    }
+
+    th, td {
+        border: 1px solid #CCC;
+        padding: 10px;
+    }
+}
